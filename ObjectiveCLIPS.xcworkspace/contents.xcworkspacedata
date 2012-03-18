@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ObjectiveCLIPS Example/ObjectiveCLIPSExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ObjectiveCLIPS Framework/ObjectiveCLIPS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CLIPS Framework/CLIPS.xcodeproj">
+   </FileRef>
+</Workspace>

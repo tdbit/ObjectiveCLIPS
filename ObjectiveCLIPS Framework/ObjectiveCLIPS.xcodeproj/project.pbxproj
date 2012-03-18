@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F01BBD809ACC2EB006A0D29 /* KBConstructColorizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F01BBD609ACC2EB006A0D29 /* KBConstructColorizer.h */; };
+		5F01BBD909ACC2EB006A0D29 /* KBConstructColorizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01BBD709ACC2EB006A0D29 /* KBConstructColorizer.m */; };
+		5F4D71810861D1D700F37A88 /* KBUserInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F4D717F0861D1D700F37A88 /* KBUserInterface.h */; };
+		5F4D71820861D1D700F37A88 /* KBUserInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4D71800861D1D700F37A88 /* KBUserInterface.m */; };
+		5FA164BA08E30BC300D58ED0 /* KBAgendaWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FA164B808E30BC300D58ED0 /* KBAgendaWindow.h */; };
+		5FA164BB08E30BC400D58ED0 /* KBAgendaWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA164B908E30BC300D58ED0 /* KBAgendaWindow.m */; };
+		5FE75A3B08413EA700EE07F0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		5FE75A3C08413EA700EE07F0 /* CLIPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDC6B14080A29F7008D1A5D /* CLIPS.framework */; };
+		5FE75A3E08413EA700EE07F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7BC243083E347200238B15 /* CoreData.framework */; };
+		5FE75A4408413EA800EE07F0 /* ObjectiveCLIPS.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5FE75A4308413EA800EE07F0 /* ObjectiveCLIPS.framework */; };
+		5FE7CC0208631713008547AC /* KBConsoleWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE7CC0008631713008547AC /* KBConsoleWindow.h */; };
+		5FE7CC0308631713008547AC /* KBConsoleWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7CC0108631713008547AC /* KBConsoleWindow.m */; };
+		5FE7CC460863A68B008547AC /* KBFactWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE7CC440863A68B008547AC /* KBFactWindow.h */; };
+		5FE7CC470863A68B008547AC /* KBFactWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7CC450863A68B008547AC /* KBFactWindow.m */; };
+		5FF93CD9098E669700BA391F /* KBRuleWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF93CD7098E669700BA391F /* KBRuleWindow.h */; };
+		5FF93CDA098E669700BA391F /* KBRuleWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF93CD8098E669700BA391F /* KBRuleWindow.m */; };
+		E27EC0891514DDAA00ED9E41 /* CLIPS.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27EC0881514DDAA00ED9E41 /* CLIPS.xib */; };
+		E27EC08C1514F61800ED9E41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E27EC08B1514F61800ED9E41 /* InfoPlist.strings */; };
+		E27EC0991514F6B800ED9E41 /* KBAttributeDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E27EC08F1514F6B800ED9E41 /* KBAttributeDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27EC09A1514F6B800ED9E41 /* KBAttributeDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E27EC0901514F6B800ED9E41 /* KBAttributeDescription.m */; };
+		E27EC09B1514F6B800ED9E41 /* KBEntityDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E27EC0911514F6B800ED9E41 /* KBEntityDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27EC09C1514F6B800ED9E41 /* KBEntityDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E27EC0921514F6B800ED9E41 /* KBEntityDescription.m */; };
+		E27EC09D1514F6B800ED9E41 /* KBObjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E27EC0931514F6B800ED9E41 /* KBObjectModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27EC09E1514F6B800ED9E41 /* KBObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E27EC0941514F6B800ED9E41 /* KBObjectModel.m */; };
+		E27EC09F1514F6B800ED9E41 /* KBPropertyDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E27EC0951514F6B800ED9E41 /* KBPropertyDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27EC0A01514F6B800ED9E41 /* KBPropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E27EC0961514F6B800ED9E41 /* KBPropertyDescription.m */; };
+		E27EC0A11514F6B800ED9E41 /* KBRelationshipDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E27EC0971514F6B800ED9E41 /* KBRelationshipDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27EC0A21514F6B800ED9E41 /* KBRelationshipDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E27EC0981514F6B800ED9E41 /* KBRelationshipDescription.m */; };
+		E2C7036C150E83F000467FCD /* FScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C7036B150E83F000467FCD /* FScript.framework */; };
+		E2DFBD2D1514F8EC00DD26E6 /* FSDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD291514F8EC00DD26E6 /* FSDataObject.h */; };
+		E2DFBD2E1514F8EC00DD26E6 /* FSDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD2A1514F8EC00DD26E6 /* FSDataObject.m */; };
+		E2DFBD2F1514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD2B1514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.h */; };
+		E2DFBD301514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD2C1514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.m */; };
+		E2DFBD351514F90700DD26E6 /* KBManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD311514F90700DD26E6 /* KBManagedObjectContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2DFBD361514F90700DD26E6 /* KBManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD321514F90700DD26E6 /* KBManagedObject.m */; };
+		E2DFBD371514F90700DD26E6 /* KBManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD331514F90700DD26E6 /* KBManagedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2DFBD381514F90700DD26E6 /* KBManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD341514F90700DD26E6 /* KBManagedObjectContext.m */; };
+		E2DFBD5A1514F9D000DD26E6 /* KBActivation.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD3A1514F9D000DD26E6 /* KBActivation.h */; };
+		E2DFBD5B1514F9D000DD26E6 /* KBActivation.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD3B1514F9D000DD26E6 /* KBActivation.m */; };
+		E2DFBD5C1514F9D000DD26E6 /* KBBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD3C1514F9D000DD26E6 /* KBBlock.h */; };
+		E2DFBD5D1514F9D000DD26E6 /* KBBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD3D1514F9D000DD26E6 /* KBBlock.m */; };
+		E2DFBD5E1514F9D000DD26E6 /* KBConstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD3E1514F9D000DD26E6 /* KBConstruct.h */; };
+		E2DFBD5F1514F9D000DD26E6 /* KBConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD3F1514F9D000DD26E6 /* KBConstruct.m */; };
+		E2DFBD601514F9D000DD26E6 /* KBDataObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD401514F9D000DD26E6 /* KBDataObject.h */; };
+		E2DFBD611514F9D000DD26E6 /* KBDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD411514F9D000DD26E6 /* KBDataObject.m */; };
+		E2DFBD621514F9D000DD26E6 /* KBDate.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD421514F9D000DD26E6 /* KBDate.h */; };
+		E2DFBD631514F9D000DD26E6 /* KBDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD431514F9D000DD26E6 /* KBDate.m */; };
+		E2DFBD641514F9D000DD26E6 /* KBEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD441514F9D000DD26E6 /* KBEnvironment.h */; };
+		E2DFBD651514F9D000DD26E6 /* KBEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD451514F9D000DD26E6 /* KBEnvironment.m */; };
+		E2DFBD661514F9D000DD26E6 /* KBFact.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD461514F9D000DD26E6 /* KBFact.h */; };
+		E2DFBD671514F9D000DD26E6 /* KBFact.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD471514F9D000DD26E6 /* KBFact.m */; };
+		E2DFBD681514F9D000DD26E6 /* KBIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD481514F9D000DD26E6 /* KBIncludes.h */; };
+		E2DFBD691514F9D000DD26E6 /* KBModule.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD491514F9D000DD26E6 /* KBModule.h */; };
+		E2DFBD6A1514F9D000DD26E6 /* KBModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD4A1514F9D000DD26E6 /* KBModule.m */; };
+		E2DFBD6B1514F9D000DD26E6 /* KBNamedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD4B1514F9D000DD26E6 /* KBNamedObject.h */; };
+		E2DFBD6C1514F9D000DD26E6 /* KBNamedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD4C1514F9D000DD26E6 /* KBNamedObject.m */; };
+		E2DFBD6D1514F9D000DD26E6 /* KBPointerKeyDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD4D1514F9D000DD26E6 /* KBPointerKeyDictionary.h */; };
+		E2DFBD6E1514F9D000DD26E6 /* KBPointerKeyDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD4E1514F9D000DD26E6 /* KBPointerKeyDictionary.m */; };
+		E2DFBD6F1514F9D000DD26E6 /* KBRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD4F1514F9D000DD26E6 /* KBRouter.h */; };
+		E2DFBD701514F9D000DD26E6 /* KBRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD501514F9D000DD26E6 /* KBRouter.m */; };
+		E2DFBD711514F9D000DD26E6 /* KBRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD511514F9D000DD26E6 /* KBRule.h */; };
+		E2DFBD721514F9D000DD26E6 /* KBRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD521514F9D000DD26E6 /* KBRule.m */; };
+		E2DFBD731514F9D000DD26E6 /* KBString.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD531514F9D000DD26E6 /* KBString.h */; };
+		E2DFBD741514F9D000DD26E6 /* KBString.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD541514F9D000DD26E6 /* KBString.m */; };
+		E2DFBD751514F9D000DD26E6 /* KBTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD551514F9D000DD26E6 /* KBTemplate.h */; };
+		E2DFBD761514F9D000DD26E6 /* KBTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD561514F9D000DD26E6 /* KBTemplate.m */; };
+		E2DFBD771514F9D000DD26E6 /* KBTemplateSlot.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD571514F9D000DD26E6 /* KBTemplateSlot.h */; };
+		E2DFBD781514F9D000DD26E6 /* KBTemplateSlot.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DFBD581514F9D000DD26E6 /* KBTemplateSlot.m */; };
+		E2DFBD791514F9D000DD26E6 /* ObjectiveCLIPS.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DFBD591514F9D000DD26E6 /* ObjectiveCLIPS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5FE75A4008413EA700EE07F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Library/Frameworks;
+			dstSubfolderSpec = 0;
+			files = (
+				5FE75A4408413EA800EE07F0 /* ObjectiveCLIPS.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		5F01BBD609ACC2EB006A0D29 /* KBConstructColorizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBConstructColorizer.h; sourceTree = "<group>"; };
+		5F01BBD709ACC2EB006A0D29 /* KBConstructColorizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBConstructColorizer.m; sourceTree = "<group>"; };
+		5F4D717F0861D1D700F37A88 /* KBUserInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBUserInterface.h; sourceTree = "<group>"; };
+		5F4D71800861D1D700F37A88 /* KBUserInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBUserInterface.m; sourceTree = "<group>"; };
+		5F7BC243083E347200238B15 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		5FA164B808E30BC300D58ED0 /* KBAgendaWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBAgendaWindow.h; sourceTree = "<group>"; };
+		5FA164B908E30BC300D58ED0 /* KBAgendaWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBAgendaWindow.m; sourceTree = "<group>"; };
+		5FDC6B14080A29F7008D1A5D /* CLIPS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CLIPS.framework; path = /Library/Frameworks/CLIPS.framework; sourceTree = "<absolute>"; };
+		5FE75A4208413EA800EE07F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FE75A4308413EA800EE07F0 /* ObjectiveCLIPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveCLIPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE7CC0008631713008547AC /* KBConsoleWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBConsoleWindow.h; sourceTree = "<group>"; };
+		5FE7CC0108631713008547AC /* KBConsoleWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBConsoleWindow.m; sourceTree = "<group>"; };
+		5FE7CC440863A68B008547AC /* KBFactWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBFactWindow.h; sourceTree = "<group>"; };
+		5FE7CC450863A68B008547AC /* KBFactWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBFactWindow.m; sourceTree = "<group>"; };
+		5FF93CD7098E669700BA391F /* KBRuleWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRuleWindow.h; sourceTree = "<group>"; };
+		5FF93CD8098E669700BA391F /* KBRuleWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRuleWindow.m; sourceTree = "<group>"; };
+		E27EC0881514DDAA00ED9E41 /* CLIPS.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CLIPS.xib; path = Resources/CLIPS.xib; sourceTree = "<group>"; };
+		E27EC08B1514F61800ED9E41 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/InfoPlist.strings; sourceTree = "<group>"; };
+		E27EC08F1514F6B800ED9E41 /* KBAttributeDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBAttributeDescription.h; sourceTree = "<group>"; };
+		E27EC0901514F6B800ED9E41 /* KBAttributeDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBAttributeDescription.m; sourceTree = "<group>"; };
+		E27EC0911514F6B800ED9E41 /* KBEntityDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBEntityDescription.h; sourceTree = "<group>"; };
+		E27EC0921514F6B800ED9E41 /* KBEntityDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBEntityDescription.m; sourceTree = "<group>"; };
+		E27EC0931514F6B800ED9E41 /* KBObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBObjectModel.h; sourceTree = "<group>"; };
+		E27EC0941514F6B800ED9E41 /* KBObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBObjectModel.m; sourceTree = "<group>"; };
+		E27EC0951514F6B800ED9E41 /* KBPropertyDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBPropertyDescription.h; sourceTree = "<group>"; };
+		E27EC0961514F6B800ED9E41 /* KBPropertyDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBPropertyDescription.m; sourceTree = "<group>"; };
+		E27EC0971514F6B800ED9E41 /* KBRelationshipDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRelationshipDescription.h; sourceTree = "<group>"; };
+		E27EC0981514F6B800ED9E41 /* KBRelationshipDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRelationshipDescription.m; sourceTree = "<group>"; };
+		E2C7036B150E83F000467FCD /* FScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FScript.framework; path = "../../F-Script20100614/FScript.framework"; sourceTree = "<group>"; };
+		E2DFBD291514F8EC00DD26E6 /* FSDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSDataObject.h; sourceTree = "<group>"; };
+		E2DFBD2A1514F8EC00DD26E6 /* FSDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSDataObject.m; sourceTree = "<group>"; };
+		E2DFBD2B1514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSInterpreter_CLIPSAdditions.h; sourceTree = "<group>"; };
+		E2DFBD2C1514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSInterpreter_CLIPSAdditions.m; sourceTree = "<group>"; };
+		E2DFBD311514F90700DD26E6 /* KBManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBManagedObjectContext.h; sourceTree = "<group>"; };
+		E2DFBD321514F90700DD26E6 /* KBManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBManagedObject.m; sourceTree = "<group>"; };
+		E2DFBD331514F90700DD26E6 /* KBManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBManagedObject.h; sourceTree = "<group>"; };
+		E2DFBD341514F90700DD26E6 /* KBManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBManagedObjectContext.m; sourceTree = "<group>"; };
+		E2DFBD3A1514F9D000DD26E6 /* KBActivation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBActivation.h; sourceTree = "<group>"; };
+		E2DFBD3B1514F9D000DD26E6 /* KBActivation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBActivation.m; sourceTree = "<group>"; };
+		E2DFBD3C1514F9D000DD26E6 /* KBBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBBlock.h; sourceTree = "<group>"; };
+		E2DFBD3D1514F9D000DD26E6 /* KBBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBBlock.m; sourceTree = "<group>"; };
+		E2DFBD3E1514F9D000DD26E6 /* KBConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBConstruct.h; sourceTree = "<group>"; };
+		E2DFBD3F1514F9D000DD26E6 /* KBConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBConstruct.m; sourceTree = "<group>"; };
+		E2DFBD401514F9D000DD26E6 /* KBDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBDataObject.h; sourceTree = "<group>"; };
+		E2DFBD411514F9D000DD26E6 /* KBDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDataObject.m; sourceTree = "<group>"; };
+		E2DFBD421514F9D000DD26E6 /* KBDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBDate.h; sourceTree = "<group>"; };
+		E2DFBD431514F9D000DD26E6 /* KBDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBDate.m; sourceTree = "<group>"; };
+		E2DFBD441514F9D000DD26E6 /* KBEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBEnvironment.h; sourceTree = "<group>"; };
+		E2DFBD451514F9D000DD26E6 /* KBEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBEnvironment.m; sourceTree = "<group>"; };
+		E2DFBD461514F9D000DD26E6 /* KBFact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBFact.h; sourceTree = "<group>"; };
+		E2DFBD471514F9D000DD26E6 /* KBFact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBFact.m; sourceTree = "<group>"; };
+		E2DFBD481514F9D000DD26E6 /* KBIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBIncludes.h; sourceTree = "<group>"; };
+		E2DFBD491514F9D000DD26E6 /* KBModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBModule.h; sourceTree = "<group>"; };
+		E2DFBD4A1514F9D000DD26E6 /* KBModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBModule.m; sourceTree = "<group>"; };
+		E2DFBD4B1514F9D000DD26E6 /* KBNamedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNamedObject.h; sourceTree = "<group>"; };
+		E2DFBD4C1514F9D000DD26E6 /* KBNamedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNamedObject.m; sourceTree = "<group>"; };
+		E2DFBD4D1514F9D000DD26E6 /* KBPointerKeyDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBPointerKeyDictionary.h; sourceTree = "<group>"; };
+		E2DFBD4E1514F9D000DD26E6 /* KBPointerKeyDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBPointerKeyDictionary.m; sourceTree = "<group>"; };
+		E2DFBD4F1514F9D000DD26E6 /* KBRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRouter.h; sourceTree = "<group>"; };
+		E2DFBD501514F9D000DD26E6 /* KBRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRouter.m; sourceTree = "<group>"; };
+		E2DFBD511514F9D000DD26E6 /* KBRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRule.h; sourceTree = "<group>"; };
+		E2DFBD521514F9D000DD26E6 /* KBRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRule.m; sourceTree = "<group>"; };
+		E2DFBD531514F9D000DD26E6 /* KBString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBString.h; sourceTree = "<group>"; };
+		E2DFBD541514F9D000DD26E6 /* KBString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBString.m; sourceTree = "<group>"; };
+		E2DFBD551514F9D000DD26E6 /* KBTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTemplate.h; sourceTree = "<group>"; };
+		E2DFBD561514F9D000DD26E6 /* KBTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTemplate.m; sourceTree = "<group>"; };
+		E2DFBD571514F9D000DD26E6 /* KBTemplateSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTemplateSlot.h; sourceTree = "<group>"; };
+		E2DFBD581514F9D000DD26E6 /* KBTemplateSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTemplateSlot.m; sourceTree = "<group>"; };
+		E2DFBD591514F9D000DD26E6 /* ObjectiveCLIPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectiveCLIPS.h; path = CLIPS/ObjectiveCLIPS.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FE75A3A08413EA700EE07F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE75A3B08413EA700EE07F0 /* Cocoa.framework in Frameworks */,
+				5FE75A3C08413EA700EE07F0 /* CLIPS.framework in Frameworks */,
+				5FE75A3E08413EA700EE07F0 /* CoreData.framework in Frameworks */,
+				E2C7036C150E83F000467FCD /* FScript.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FE75A4308413EA800EE07F0 /* ObjectiveCLIPS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ObjectiveCLIPS */ = {
+			isa = PBXGroup;
+			children = (
+				E2DFBD261514F7AF00DD26E6 /* ObjectiveCLIPS */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = ObjectiveCLIPS;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E27EC0881514DDAA00ED9E41 /* CLIPS.xib */,
+				5FE75A4208413EA800EE07F0 /* Info.plist */,
+				E27EC08B1514F61800ED9E41 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2C7036B150E83F000467FCD /* FScript.framework */,
+				5F7BC243083E347200238B15 /* CoreData.framework */,
+				5FDC6B14080A29F7008D1A5D /* CLIPS.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5F4D717A0861D12600F37A88 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				5F4D717F0861D1D700F37A88 /* KBUserInterface.h */,
+				5F4D71800861D1D700F37A88 /* KBUserInterface.m */,
+				5FE7CC0008631713008547AC /* KBConsoleWindow.h */,
+				5FE7CC0108631713008547AC /* KBConsoleWindow.m */,
+				5FE7CC440863A68B008547AC /* KBFactWindow.h */,
+				5FE7CC450863A68B008547AC /* KBFactWindow.m */,
+				5FA164B808E30BC300D58ED0 /* KBAgendaWindow.h */,
+				5FA164B908E30BC300D58ED0 /* KBAgendaWindow.m */,
+				5FF93CD7098E669700BA391F /* KBRuleWindow.h */,
+				5FF93CD8098E669700BA391F /* KBRuleWindow.m */,
+				5F01BBD609ACC2EB006A0D29 /* KBConstructColorizer.h */,
+				5F01BBD709ACC2EB006A0D29 /* KBConstructColorizer.m */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		E27EC08E1514F6B800ED9E41 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				E27EC08F1514F6B800ED9E41 /* KBAttributeDescription.h */,
+				E27EC0901514F6B800ED9E41 /* KBAttributeDescription.m */,
+				E27EC0911514F6B800ED9E41 /* KBEntityDescription.h */,
+				E27EC0921514F6B800ED9E41 /* KBEntityDescription.m */,
+				E2DFBD331514F90700DD26E6 /* KBManagedObject.h */,
+				E2DFBD321514F90700DD26E6 /* KBManagedObject.m */,
+				E2DFBD311514F90700DD26E6 /* KBManagedObjectContext.h */,
+				E2DFBD341514F90700DD26E6 /* KBManagedObjectContext.m */,
+				E27EC0931514F6B800ED9E41 /* KBObjectModel.h */,
+				E27EC0941514F6B800ED9E41 /* KBObjectModel.m */,
+				E27EC0951514F6B800ED9E41 /* KBPropertyDescription.h */,
+				E27EC0961514F6B800ED9E41 /* KBPropertyDescription.m */,
+				E27EC0971514F6B800ED9E41 /* KBRelationshipDescription.h */,
+				E27EC0981514F6B800ED9E41 /* KBRelationshipDescription.m */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		E2DFBD261514F7AF00DD26E6 /* ObjectiveCLIPS */ = {
+			isa = PBXGroup;
+			children = (
+				E2DFBD591514F9D000DD26E6 /* ObjectiveCLIPS.h */,
+				E2DFBD391514F9D000DD26E6 /* CLIPS */,
+				E2DFBD281514F8EC00DD26E6 /* FScript */,
+				E27EC08E1514F6B800ED9E41 /* ManagedObjects */,
+				5F4D717A0861D12600F37A88 /* UserInterface */,
+			);
+			name = ObjectiveCLIPS;
+			sourceTree = "<group>";
+		};
+		E2DFBD281514F8EC00DD26E6 /* FScript */ = {
+			isa = PBXGroup;
+			children = (
+				E2DFBD291514F8EC00DD26E6 /* FSDataObject.h */,
+				E2DFBD2A1514F8EC00DD26E6 /* FSDataObject.m */,
+				E2DFBD2B1514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.h */,
+				E2DFBD2C1514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.m */,
+			);
+			path = FScript;
+			sourceTree = "<group>";
+		};
+		E2DFBD391514F9D000DD26E6 /* CLIPS */ = {
+			isa = PBXGroup;
+			children = (
+				E2DFBD3A1514F9D000DD26E6 /* KBActivation.h */,
+				E2DFBD3B1514F9D000DD26E6 /* KBActivation.m */,
+				E2DFBD3C1514F9D000DD26E6 /* KBBlock.h */,
+				E2DFBD3D1514F9D000DD26E6 /* KBBlock.m */,
+				E2DFBD3E1514F9D000DD26E6 /* KBConstruct.h */,
+				E2DFBD3F1514F9D000DD26E6 /* KBConstruct.m */,
+				E2DFBD401514F9D000DD26E6 /* KBDataObject.h */,
+				E2DFBD411514F9D000DD26E6 /* KBDataObject.m */,
+				E2DFBD421514F9D000DD26E6 /* KBDate.h */,
+				E2DFBD431514F9D000DD26E6 /* KBDate.m */,
+				E2DFBD441514F9D000DD26E6 /* KBEnvironment.h */,
+				E2DFBD451514F9D000DD26E6 /* KBEnvironment.m */,
+				E2DFBD461514F9D000DD26E6 /* KBFact.h */,
+				E2DFBD471514F9D000DD26E6 /* KBFact.m */,
+				E2DFBD481514F9D000DD26E6 /* KBIncludes.h */,
+				E2DFBD491514F9D000DD26E6 /* KBModule.h */,
+				E2DFBD4A1514F9D000DD26E6 /* KBModule.m */,
+				E2DFBD4B1514F9D000DD26E6 /* KBNamedObject.h */,
+				E2DFBD4C1514F9D000DD26E6 /* KBNamedObject.m */,
+				E2DFBD4D1514F9D000DD26E6 /* KBPointerKeyDictionary.h */,
+				E2DFBD4E1514F9D000DD26E6 /* KBPointerKeyDictionary.m */,
+				E2DFBD4F1514F9D000DD26E6 /* KBRouter.h */,
+				E2DFBD501514F9D000DD26E6 /* KBRouter.m */,
+				E2DFBD511514F9D000DD26E6 /* KBRule.h */,
+				E2DFBD521514F9D000DD26E6 /* KBRule.m */,
+				E2DFBD531514F9D000DD26E6 /* KBString.h */,
+				E2DFBD541514F9D000DD26E6 /* KBString.m */,
+				E2DFBD551514F9D000DD26E6 /* KBTemplate.h */,
+				E2DFBD561514F9D000DD26E6 /* KBTemplate.m */,
+				E2DFBD571514F9D000DD26E6 /* KBTemplateSlot.h */,
+				E2DFBD581514F9D000DD26E6 /* KBTemplateSlot.m */,
+			);
+			path = CLIPS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5FE75A1608413EA700EE07F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2DFBD791514F9D000DD26E6 /* ObjectiveCLIPS.h in Headers */,
+				E27EC0991514F6B800ED9E41 /* KBAttributeDescription.h in Headers */,
+				E27EC09B1514F6B800ED9E41 /* KBEntityDescription.h in Headers */,
+				E27EC09D1514F6B800ED9E41 /* KBObjectModel.h in Headers */,
+				E27EC09F1514F6B800ED9E41 /* KBPropertyDescription.h in Headers */,
+				E27EC0A11514F6B800ED9E41 /* KBRelationshipDescription.h in Headers */,
+				E2DFBD351514F90700DD26E6 /* KBManagedObjectContext.h in Headers */,
+				E2DFBD371514F90700DD26E6 /* KBManagedObject.h in Headers */,
+				5F4D71810861D1D700F37A88 /* KBUserInterface.h in Headers */,
+				5FE7CC0208631713008547AC /* KBConsoleWindow.h in Headers */,
+				5FE7CC460863A68B008547AC /* KBFactWindow.h in Headers */,
+				5FA164BA08E30BC300D58ED0 /* KBAgendaWindow.h in Headers */,
+				5FF93CD9098E669700BA391F /* KBRuleWindow.h in Headers */,
+				5F01BBD809ACC2EB006A0D29 /* KBConstructColorizer.h in Headers */,
+				E2DFBD2D1514F8EC00DD26E6 /* FSDataObject.h in Headers */,
+				E2DFBD2F1514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.h in Headers */,
+				E2DFBD5A1514F9D000DD26E6 /* KBActivation.h in Headers */,
+				E2DFBD5C1514F9D000DD26E6 /* KBBlock.h in Headers */,
+				E2DFBD5E1514F9D000DD26E6 /* KBConstruct.h in Headers */,
+				E2DFBD601514F9D000DD26E6 /* KBDataObject.h in Headers */,
+				E2DFBD621514F9D000DD26E6 /* KBDate.h in Headers */,
+				E2DFBD641514F9D000DD26E6 /* KBEnvironment.h in Headers */,
+				E2DFBD661514F9D000DD26E6 /* KBFact.h in Headers */,
+				E2DFBD681514F9D000DD26E6 /* KBIncludes.h in Headers */,
+				E2DFBD691514F9D000DD26E6 /* KBModule.h in Headers */,
+				E2DFBD6B1514F9D000DD26E6 /* KBNamedObject.h in Headers */,
+				E2DFBD6D1514F9D000DD26E6 /* KBPointerKeyDictionary.h in Headers */,
+				E2DFBD6F1514F9D000DD26E6 /* KBRouter.h in Headers */,
+				E2DFBD711514F9D000DD26E6 /* KBRule.h in Headers */,
+				E2DFBD731514F9D000DD26E6 /* KBString.h in Headers */,
+				E2DFBD751514F9D000DD26E6 /* KBTemplate.h in Headers */,
+				E2DFBD771514F9D000DD26E6 /* KBTemplateSlot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5FE75A1508413EA700EE07F0 /* ObjectiveCLIPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FEB41000976B25E00F19DBE /* Build configuration list for PBXNativeTarget "ObjectiveCLIPS" */;
+			buildPhases = (
+				5FE75A1608413EA700EE07F0 /* Headers */,
+				5FE75A2808413EA700EE07F0 /* Resources */,
+				5FE75A2A08413EA700EE07F0 /* Sources */,
+				5FE75A3A08413EA700EE07F0 /* Frameworks */,
+				5FE75A3F08413EA700EE07F0 /* Rez */,
+				5FE75A4008413EA700EE07F0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveCLIPS;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = ObjectiveCLIPS;
+			productReference = 5FE75A4308413EA800EE07F0 /* ObjectiveCLIPS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 5FEB41040976B25E00F19DBE /* Build configuration list for PBXProject "ObjectiveCLIPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ObjectiveCLIPS */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FE75A1508413EA700EE07F0 /* ObjectiveCLIPS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FE75A2808413EA700EE07F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27EC0891514DDAA00ED9E41 /* CLIPS.xib in Resources */,
+				E27EC08C1514F61800ED9E41 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		5FE75A3F08413EA700EE07F0 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FE75A2A08413EA700EE07F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4D71820861D1D700F37A88 /* KBUserInterface.m in Sources */,
+				5FE7CC0308631713008547AC /* KBConsoleWindow.m in Sources */,
+				5FE7CC470863A68B008547AC /* KBFactWindow.m in Sources */,
+				5FA164BB08E30BC400D58ED0 /* KBAgendaWindow.m in Sources */,
+				5FF93CDA098E669700BA391F /* KBRuleWindow.m in Sources */,
+				5F01BBD909ACC2EB006A0D29 /* KBConstructColorizer.m in Sources */,
+				E27EC09A1514F6B800ED9E41 /* KBAttributeDescription.m in Sources */,
+				E27EC09C1514F6B800ED9E41 /* KBEntityDescription.m in Sources */,
+				E27EC09E1514F6B800ED9E41 /* KBObjectModel.m in Sources */,
+				E27EC0A01514F6B800ED9E41 /* KBPropertyDescription.m in Sources */,
+				E27EC0A21514F6B800ED9E41 /* KBRelationshipDescription.m in Sources */,
+				E2DFBD2E1514F8EC00DD26E6 /* FSDataObject.m in Sources */,
+				E2DFBD301514F8EC00DD26E6 /* FSInterpreter_CLIPSAdditions.m in Sources */,
+				E2DFBD361514F90700DD26E6 /* KBManagedObject.m in Sources */,
+				E2DFBD381514F90700DD26E6 /* KBManagedObjectContext.m in Sources */,
+				E2DFBD5B1514F9D000DD26E6 /* KBActivation.m in Sources */,
+				E2DFBD5D1514F9D000DD26E6 /* KBBlock.m in Sources */,
+				E2DFBD5F1514F9D000DD26E6 /* KBConstruct.m in Sources */,
+				E2DFBD611514F9D000DD26E6 /* KBDataObject.m in Sources */,
+				E2DFBD631514F9D000DD26E6 /* KBDate.m in Sources */,
+				E2DFBD651514F9D000DD26E6 /* KBEnvironment.m in Sources */,
+				E2DFBD671514F9D000DD26E6 /* KBFact.m in Sources */,
+				E2DFBD6A1514F9D000DD26E6 /* KBModule.m in Sources */,
+				E2DFBD6C1514F9D000DD26E6 /* KBNamedObject.m in Sources */,
+				E2DFBD6E1514F9D000DD26E6 /* KBPointerKeyDictionary.m in Sources */,
+				E2DFBD701514F9D000DD26E6 /* KBRouter.m in Sources */,
+				E2DFBD721514F9D000DD26E6 /* KBRule.m in Sources */,
+				E2DFBD741514F9D000DD26E6 /* KBString.m in Sources */,
+				E2DFBD761514F9D000DD26E6 /* KBTemplate.m in Sources */,
+				E2DFBD781514F9D000DD26E6 /* KBTemplateSlot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5FEB41010976B25E00F19DBE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../F-Script20100614\"";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ObjectiveCLIPS;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		5FEB41020976B25E00F19DBE /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../F-Script20100614\"";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ObjectiveCLIPS;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		5FEB41030976B25E00F19DBE /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../F-Script20100614\"";
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ObjectiveCLIPS;
+				SDKROOT = macosx;
+				SECTORDER_FLAGS = "";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		5FEB41050976B25E00F19DBE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		5FEB41060976B25E00F19DBE /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		5FEB41070976B25E00F19DBE /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FEB41000976B25E00F19DBE /* Build configuration list for PBXNativeTarget "ObjectiveCLIPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FEB41010976B25E00F19DBE /* Development */,
+				5FEB41020976B25E00F19DBE /* Deployment */,
+				5FEB41030976B25E00F19DBE /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		5FEB41040976B25E00F19DBE /* Build configuration list for PBXProject "ObjectiveCLIPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FEB41050976B25E00F19DBE /* Development */,
+				5FEB41060976B25E00F19DBE /* Deployment */,
+				5FEB41070976B25E00F19DBE /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
