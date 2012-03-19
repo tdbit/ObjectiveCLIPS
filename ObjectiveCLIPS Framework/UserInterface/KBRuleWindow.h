@@ -13,6 +13,8 @@
 {
     IBOutlet id rulesController;
     IBOutlet id inputTextArea;
+    IBOutlet id outputTextArea;
+    
     IBOutlet KBEnvironment *environment;
 
     BOOL shouldSubmit;

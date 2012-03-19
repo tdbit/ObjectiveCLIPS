@@ -411,7 +411,7 @@ static int comparePriorities(id r1, id r2, void *ctx)
 
 -(void)loadDeveloperTools
 {
-//    [self setExtraLogging:YES];
+    [self setExtraLogging:YES];
 	if(_extraLogging)NSLog(@"%@ %@ entry",[self className],NSStringFromSelector( _cmd ));
     if(!_devToolsLoaded)
     {

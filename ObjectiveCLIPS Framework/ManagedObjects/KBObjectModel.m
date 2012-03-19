@@ -13,11 +13,12 @@
 
 @implementation KBObjectModel : NSObject 
 
--init
+
+-(id)init
 {
     if(self = [super init])
     {
-        _entities = [NSMutableDictionary new];
+//        _entities = [NSMutableDictionary new];
     }
     return self;
 }
@@ -30,6 +31,9 @@
 
 -(id)entityForName:(NSString*)name
 {
+    if(!_entities)
+        _entities = [[NSMutableDictionary alloc] init];
+    
     KBEntityDescription* desc = [_entities objectForKey: name];
     if(!desc)
     {

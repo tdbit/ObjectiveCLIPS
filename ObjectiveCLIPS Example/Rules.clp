@@ -26,7 +26,32 @@
     "creates a new object"
     ([|context object|
         context := ?environment templateDelegate.
-        object := NSEntityDescription insertNewObjectForEntityForName:?entityName inManagedObjectContext:context.])
+        object := NSEntityDescription insertNewObjectForEntityForName:?entityName 
+											   inManagedObjectContext:context.])
+)
+
+(defrule exists-catalog-item
+	"automatically create one catalog item"
+	(not (exists (CatalogItem (itemDescription ?description))))
+	=>
+	; (assert (CatalogItem (itemDescription "Default item")
+	; 					 (price 10.0)
+	; 					 (taxable false)))
+)
+
+(defrule init-new-catalog-item
+	"automatically create one catalog item"
+	(KBEnvironment (self ?env))
+	(not (exists (CatalogItem (itemDescription ?description))))
+	=>
+	([|context object|
+        context := ?env templateDelegate.
+        object := NSEntityDescription insertNewObjectForEntityForName:'CatalogItem' 
+											   inManagedObjectContext:context.])
+    
+	; (assert (CatalogItem (itemDescription "Default item")
+	; 					 (price 10.0)
+	; 					 (taxable false)))
 )
 
 (defrule init-new-purchase-item-quantity 

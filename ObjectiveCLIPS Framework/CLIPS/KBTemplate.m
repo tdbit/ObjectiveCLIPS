@@ -120,6 +120,7 @@ static int KBUndefConstructFunction(void *envImpl,void* impl)
                          withObject:[[array objectAtIndex: i] descriptionWithIdentifier]];
     }
     NSString* val = [array componentsJoinedByString:@"\n\n"];
+    [array release];
     return val;
 }
 

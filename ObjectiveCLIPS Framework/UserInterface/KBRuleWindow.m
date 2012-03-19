@@ -37,6 +37,7 @@
 -(void)awakeFromNib
 {    
     [inputTextArea setDelegate: self];
+    [[outputTextArea textStorage] setFont:[NSFont userFixedPitchFontOfSize:0]];
 }
 
 -(void)textDidChange:(NSNotification *)notification

@@ -187,6 +187,11 @@ static KBConstructColorizer *sharedColorizer = nil;
                        c != '\r' && 
                        c != ' ' &&
                        c != '\t' &&
+                       c != '~' &&
+                       c != ')' &&
+                       c != '(' &&
+                       c != '[' &&
+                       c != ']' &&
                        c != '&' ) {
                     c = [string characterAtIndex: idxRight];
                     ++idxRight;

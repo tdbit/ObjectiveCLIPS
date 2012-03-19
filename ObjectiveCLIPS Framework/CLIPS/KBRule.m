@@ -136,9 +136,10 @@ static int KBUndefConstructFunction(void *envImpl,void* impl)
 
 -(NSString*)matchSummary
 {
-    KBRouter* router = [[self environment] routerForName: @"scratch"];
+    KBRouter* router = [[self environment] routerForName: @"wdisplay"];
     [router activate];
-    [router setDelegate: [NSMutableString new]];
+//    [router setDelegate: [NSMutableString new]];
+    [router setDelegate:[[NSMutableString alloc] init]];
     EnvMatches([[self environment] _impl],_impl);
     [router deactivate];
     return (NSString*)[[router delegate]autorelease];
@@ -155,8 +156,8 @@ static int KBUndefConstructFunction(void *envImpl,void* impl)
     [router deactivate];
     return (NSString*)[router delegate];
 */
-    NSString *str = [NSString stringWithUTF8String: 
-        (DefruleData([[self environment]_impl])->DefruleConstruct)->
+    NSString *str = [NSString stringWithUTF8String:
+                     (DefruleData([[self environment]_impl])->DefruleConstruct)->
                 getPPFormFunction([[self environment]_impl],(struct constructHeader *)[self _impl])];
     return str;
 }
